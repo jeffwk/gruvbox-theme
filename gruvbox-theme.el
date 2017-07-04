@@ -174,11 +174,13 @@
   (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f")
   (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
 
-  (gruvbox-bg (cl-case gruvbox-contrast
-                (hard gruvbox-dark0_hard)
-                (soft gruvbox-dark0_soft)
-                ;; Medium by default.
-                (t    gruvbox-dark0))))
+  (gruvbox-bg (if (null (window-system))
+                  nil
+                (cl-case gruvbox-contrast
+                  (hard gruvbox-dark0_hard)
+                  (soft gruvbox-dark0_soft)
+                  ;; Medium by default.
+                  (t    gruvbox-dark0)))))
 
  ;; UI
  ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
