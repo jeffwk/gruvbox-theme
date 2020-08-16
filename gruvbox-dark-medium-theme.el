@@ -57,7 +57,9 @@
  ((((class color) (min-colors #xFFFFFF))        ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))           ; col 2 Xterm/256
 
-  (gruvbox-dark0           "#282828" "#28282800")
+  ;;(gruvbox-dark0           "#282828" "#28282800")
+  ;;(gruvbox-dark0           "#2a2826" "#2a282600")
+  (gruvbox-dark0           "#2f2c28" "#2f2c2800")
   (gruvbox-dark0_soft      "#32302f" "#303030")
   (gruvbox-dark1           "#3c3836" "#3a3a3a")
   (gruvbox-dark2           "#504945" "#4e4e4e")
